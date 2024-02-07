@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './Comportant/Header/Header'
+import Hero from './Comportant/Hero/Hero'
+import './App.css'
+import Compni from './Comportant/Compnis/Compni'
+import Residense from './Comportant/Residense/Residense'
+import Value from './Comportant/Value/Value'
+import Contect from './Comportant/Contect/Contect'
+import GetStarted from './Comportant/Getstarted/GetStarted'
+import Footer from './Comportant/Footer/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div>
+      <div className='white-gradient' />
+        <Header />
+        <Hero />
+      </div>
+      <Compni/>
+      <Residense/>
+      <Value/>
+      <Contect/>
+      <GetStarted/>
+      <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
